@@ -101,7 +101,7 @@ class StudentService {
         
         if (!result.success || result.results.length === 0) {
             summaryContainer.innerHTML = `
-                <h4>Welcome to ExamSecure</h4>
+                <h4>Welcome to ProctorX</h4>
                 <p>You haven't taken any exams yet. Enter an exam code above to get started!</p>
             `;
             return;
