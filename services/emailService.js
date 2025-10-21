@@ -23,9 +23,9 @@ async function sendOTPEmail(toEmail, otp, firstName) {
         const transporter = createEmailTransporter();
         
         const mailOptions = {
-            from: `"ExamSecure" <${process.env.EMAIL_USER}>`,
+            from: `"ProctorX" <${process.env.EMAIL_USER}>`,
             to: toEmail,
-            subject: 'ExamSecure - Email Verification Code',
+            subject: 'ProctorX - Email Verification Code',
             html: `
                 <!DOCTYPE html>
                 <html>
@@ -43,11 +43,11 @@ async function sendOTPEmail(toEmail, otp, firstName) {
                 <body>
                     <div class="container">
                         <div class="header">
-                            <h1>ExamSecure</h1>
+                            <h1>ProctorX</h1>
                         </div>
                         <div class="content">
                             <h2>Hello ${firstName || 'there'}!</h2>
-                            <p>Thank you for signing up with ExamSecure. To complete your registration, please verify your email address using the code below:</p>
+                            <p>Thank you for signing up with ProctorX. To complete your registration, please verify your email address using the code below:</p>
                             
                             <div class="otp-box">
                                 <p style="margin: 0; font-size: 14px; color: #666;">Your verification code is:</p>
@@ -58,7 +58,7 @@ async function sendOTPEmail(toEmail, otp, firstName) {
                             <p>If you didn't request this code, please ignore this email.</p>
                             
                             <div class="footer">
-                                <p>© 2024 ExamSecure. All rights reserved.</p>
+                                <p>© 2025 ProctorX. All rights reserved.</p>
                                 <p>This is an automated email. Please do not reply.</p>
                             </div>
                         </div>
